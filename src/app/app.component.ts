@@ -13,6 +13,7 @@ import { ColaboradoresComponent } from './colaboradores/colaboradores.component'
 import { SobreNosotrosComponent } from './sobre-nosotros/sobre-nosotros.component';
 import { LoginComponent } from './login/login.component';
 import { ProductosComponent } from './productos/productos.component';
+import { ComunidadComponent } from './comunidad/comunidad.component';
 
 @Component({
   selector: 'app-root',
@@ -30,7 +31,8 @@ import { ProductosComponent } from './productos/productos.component';
     ColaboradoresComponent,
   SobreNosotrosComponent,
   LoginComponent,
-ProductosComponent],
+ProductosComponent,
+ComunidadComponent],
 
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

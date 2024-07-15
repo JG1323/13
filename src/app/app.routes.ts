@@ -12,7 +12,9 @@ import { ColaboradoresComponent } from './colaboradores/colaboradores.component'
 import { SobreNosotrosComponent } from './sobre-nosotros/sobre-nosotros.component';
 import { ProductosComponent } from './productos/productos.component';
 import { LoginComponent } from './login/login.component';
+import { ComunidadComponent } from './comunidad/comunidad.component';
 import { FooterComponent } from './footer/footer.component';
+import { Component } from '@angular/core';
 
 
 export const routes: Routes = [
@@ -25,6 +27,7 @@ export const routes: Routes = [
     {path: 'colaboradores', component: ColaboradoresComponent},
     {path: 'sobre-nosotros', component: SobreNosotrosComponent},
     {path: 'productos', component: ProductosComponent},
+    {path: 'comunidad', component: ComunidadComponent},
     // {path: 'header', component: HeaderComponent},
     {path: '', component: HomeComponent},
     // {path: 'footer', component: FooterComponent},
