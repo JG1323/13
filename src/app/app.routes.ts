@@ -25,10 +25,12 @@ export const routes: Routes = [
     {path: 'colaboradores', component: ColaboradoresComponent},
     {path: 'sobre-nosotros', component: SobreNosotrosComponent},
     {path: 'productos', component: ProductosComponent},
-    {path: 'header', component: HeaderComponent},
-    {path: 'home', component: HomeComponent},
-    {path: 'footer', component: FooterComponent},
+    // {path: 'header', component: HeaderComponent},
+    {path: '', component: HomeComponent},
+    // {path: 'footer', component: FooterComponent},
     {path: 'login', component: LoginComponent},
+    {path: 'home', redirectTo: '' , pathMatch: 'full'},
+
     { path: '**', redirectTo: '' },
 
 ];
