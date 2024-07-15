@@ -23,17 +23,20 @@ document.addEventListener('DOMContentLoaded', () => {
    const navbar = document.querySelector('.navbar');
     const navLinks = document.querySelector('.nav-links');
     const authButtons = document.querySelector('.auth-buttons');
+    const cart = document.querySelector('.cart');
   
-    if (navbar && navLinks && authButtons) {
+    if (navbar && navLinks && authButtons && cart) {
      window.addEventListener('scroll', () => {
          if (window.scrollY > 50) {
          navLinks.classList.add('hidden');
         authButtons.classList.add('hidden');
        navbar.classList.add('shrink');
+       cart.classList.add('hidden');
        } else {
           navLinks.classList.remove('hidden');
         authButtons.classList.remove('hidden');
           navbar.classList.remove('shrink');
+          cart.classList.remove('hidden');
         }
       });
     }

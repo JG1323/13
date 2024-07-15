@@ -7,7 +7,6 @@
   width: 48%;
 }
 
-
 .video-banner {
   position: fixed; /* Makes the video banner stick to the top */
   background-position: cover;
@@ -335,9 +334,9 @@
   width: 230px; /* Adjusts width to the content */
   padding: 10px 20px; /* Reduced padding for the shrunken state */
   justify-content: flex-start; /* Aligns the navbar items to the left */
-  margin: 0; /* Align to the left margin of the page */
-  display: flex; /* Ensures items are in a single line */
-  align-items: left; /* Vertically centers the items */
+  margin: 0;
+  display: flex; 
+  align-items: left; 
   top: 20px;
 }
 
@@ -352,11 +351,11 @@
   display: none; /* Hide all other nav items except the logo */
 }
 
-.nav-links, .auth-buttons {
+.nav-links, .auth-buttons, .cart {
   transition: opacity 0.5s ease;
 }
 
-.nav-links.hidden, .auth-buttons.hidden {
+.nav-links.hidden, .auth-buttons.hidden, .cart.hidden {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease, visibility 0s 0.5s; /* Ensure visibility changes after opacity transition */
@@ -414,4 +413,15 @@
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon {
+  width: 24px; 
+  height: 24px;
+  margin-right: 8px; 
 }
