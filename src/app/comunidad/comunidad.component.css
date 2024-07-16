@@ -34,6 +34,24 @@ nav ul li a {
     text-decoration: none;
 }
 
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content {
+    flex: 3;
+    padding: 2em;
+}
+
+aside.chat {
+    flex: 1;
+    background-color: #333;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 5px;
+}
+
 section {
     padding: 2em;
     border-bottom: 1px solid #ffd700;
@@ -57,12 +75,39 @@ form button {
     cursor: pointer;
 }
 
-#galeria, #mensajes, #lista-eventos {
+#galeria, #mensajes, #lista-eventos, #chat-mensajes {
     background-color: #333;
     padding: 1em;
     border-radius: 5px;
 }
 
-#galeria img, #mensajes div, #lista-eventos div {
+#galeria img, #mensajes div, #lista-eventos div, #chat-mensajes div {
     margin-bottom: 1em;
+}
+
+aside.chat h2 {
+    margin-top: 0;
+}
+
+#chat-form input {
+    width: calc(100% - 2em);
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+#chat-form button {
+    width: auto;
+    display: inline-block;
+}
+
+#chat-mensajes {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.mensaje {
+    background-color: #555;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
 }

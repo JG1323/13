@@ -52,3 +52,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 5000); // 5 seconds interval
    }
    });
+
+   document.getElementById('chat-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    var chatEntrada = document.getElementById('chat-entrada');
+    var mensaje = chatEntrada.value.trim();
+    
+    if (mensaje !== "") {
+        var chatMensajes = document.getElementById('chat-mensajes');
+        
+        var nuevoMensaje = document.createElement('div');
+        nuevoMensaje.textContent = mensaje;
+        nuevoMensaje.className = 'mensaje';
+        
+        chatMensajes.appendChild(nuevoMensaje);
+        
+        chatEntrada.value = "";
+        chatMensajes.scrollTop = chatMensajes.scrollHeight;
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.buy-btn');
+  
+  buttons.forEach(button => {
+      button.addEventListener('click', () => {
+          const productId = button.getAttribute('data-product-id');
+          addToCart(productId);
+      });
+  });
+  
+  function addToCart(productId) {
+      alert('Producto ' + productId + ' añadido al carrito');
+  }
+});
