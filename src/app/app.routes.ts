@@ -12,6 +12,7 @@ import { ColaboradoresComponent } from './colaboradores/colaboradores.component'
 import { SobreNosotrosComponent } from './sobre-nosotros/sobre-nosotros.component';
 import { ProductosComponent } from './productos/productos.component';
 import { LoginComponent } from './login/login.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 import { ComunidadComponent } from './comunidad/comunidad.component';
 import { FooterComponent } from './footer/footer.component';
 import { Component } from '@angular/core';
@@ -32,6 +33,7 @@ export const routes: Routes = [
     {path: '', component: HomeComponent},
     // {path: 'footer', component: FooterComponent},
     {path: 'login', component: LoginComponent},
+    {path: 'sign-up', component: SignUpComponent},
     {path: 'home', redirectTo: '' , pathMatch: 'full'},
 
     { path: '**', redirectTo: '' },

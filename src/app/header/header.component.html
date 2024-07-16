@@ -20,12 +20,20 @@
   </ul>
   <div class="auth-buttons">
       <a href="/login" class="login-btn">Login</a>
-      <a href="#" class="signup-btn">Sign Up</a>
+      <a href="/sign-up" class="signup-btn">Sign Up</a>
   </div>
   <div class="cart">
-    <a href="/carrito">
-      <img src="assets/img/carrito.png" alt="Carrito" class="cart-icon">
-      Carrito (0)
+    <a  id="cart-icon">
+        <img src="assets/img/carrito.png" alt="Carrito" class="cart-icon">
     </a>
+    <div class="cart-dropdown hidden">
+        <div class="cart-container">
+            <!-- Aquí se mostrarán los productos añadidos al carrito -->
+        </div>
+    </div>
+</div>
+  <div class="cart-total">
+      Total: <span id="cart-total">0.00</span>€
   </div>
+  <button id="checkout-btn" class="checkout-btn">Realizar Compra</button>
 </nav>

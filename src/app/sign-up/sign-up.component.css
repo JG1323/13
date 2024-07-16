@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #FFD700; /* Fondo amarillo dorado para la barra de navegación */
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem; /* Añadido espacio para bajar el formulario */
+}
+
+.container {
+    background-color: #333333; /* Fondo gris oscuro para el contenedor */
+    padding: 1.5rem; /* Reducido el padding */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 350px; /* Reducido el ancho máximo */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #FFD700; /* Amarillo dorado */
+}
+
+.form-group {
+    margin-bottom: 1rem; /* Reducido el margen inferior */
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #FFD700; /* Amarillo dorado */
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem; /* Reducido el padding */
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background-color: #555555; /* Fondo gris medio para los inputs */
+    color: #ffffff; /* Texto blanco */
+}
+
+input:focus {
+    border-color: #FFD700; /* Borde amarillo dorado cuando está enfocado */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 0.5rem; /* Reducido el padding */
+    border: none;
+    border-radius: 4px;
+    background-color: #FFD700; /* Fondo amarillo dorado para el botón */
+    color: #000000; /* Texto negro */
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FFC700; /* Fondo amarillo más claro al pasar el mouse */
+}

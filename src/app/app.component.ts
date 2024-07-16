@@ -12,6 +12,7 @@ import { EducativosSocioculturalesComponent } from './educativos-socioculturales
 import { ColaboradoresComponent } from './colaboradores/colaboradores.component';
 import { SobreNosotrosComponent } from './sobre-nosotros/sobre-nosotros.component';
 import { LoginComponent } from './login/login.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 import { ProductosComponent } from './productos/productos.component';
 import { ComunidadComponent } from './comunidad/comunidad.component';
 
@@ -31,6 +32,7 @@ import { ComunidadComponent } from './comunidad/comunidad.component';
     ColaboradoresComponent,
   SobreNosotrosComponent,
   LoginComponent,
+  SignUpComponent,
 ProductosComponent,
 ComunidadComponent],
 
