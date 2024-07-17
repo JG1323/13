@@ -258,4 +258,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             
             updateCartDisplay();  // Update the cart display on page load
-        });
+
+            const contratarBtn = document.getElementById('contratar-servicio-btn');
+            const formularioContainer = document.getElementById('formulario-container');
+            
+            contratarBtn.addEventListener('click', function(event) {
+                event.preventDefault();
+                formularioContainer.classList.toggle('hidden');
+            });
+});

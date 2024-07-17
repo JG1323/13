@@ -20,7 +20,21 @@
         <p>De lunes a viernes. De 9h a 13h y de 17h a 19h.</p>
         <p>40€ la sesión.</p>
         <p>Pack de sesiones disponibles.</p>
-        <a href="#" class="button">Contratar Servicio</a>
+        <a href="#" id="contratar-servicio-btn" class="button">Contratar Servicio</a>
+    </div>
+    <div id="formulario-container" class="hidden">
+        <form id="formulario-servicio">
+            <h2>Formulario de Contratación</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <label for="detalles">Detalles del Servicio:</label>
+            <textarea id="detalles" name="detalles" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
     </div>
 </div>
-
+<script src="script.js"></script>

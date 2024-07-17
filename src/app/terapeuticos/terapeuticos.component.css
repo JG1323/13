@@ -42,3 +42,46 @@ footer {
 .button:hover {
     background-color: #b59517;
 }
+
+
+
+.hidden {
+    display: none;
+}
+
+#formulario-container {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+#formulario-servicio {
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario-servicio label {
+    margin: 5px 0;
+}
+
+#formulario-servicio input,
+#formulario-servicio textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#formulario-servicio button {
+    padding: 10px;
+    background-color: #ddb81a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#formulario-servicio button:hover {
+    background-color: #b59517;
+}
